@@ -255,7 +255,9 @@
             padding: .5rem 1.4rem;
         }
         .cont-3{
-            height: 85px;
+            height: 10vh;
+
+            box-shadow: 0 -2px rgba(0,0,0, 0.5) inset;
         }
         .p-3{
             height: 100%;
@@ -273,28 +275,26 @@
 
      }
 
-@media  screen and (max-width: 370px){
-    #header, #section-bio, #footer{
-        width: 384px;
+@media screen and (max-width: 375px){
+    .cont-3{
+            height: 15vh;
     }
-        .cont-3{
-            width: 384px;
-        }
+}
+
+@media  screen and (max-width: 370px){
+    .cont-3, #section-museo, #header, #footer{
+        /* width: 384px; */
+        width: 100vw;
+    }
+
 }
 
     @media  screen and (max-width: 295px){
-        #header,#footer{
-            width: 107%;
-        }
-        #section-bio{
-            width: 290px;
-        }
         .cont-3{
             padding: 0;
             margin: 0 auto;
-            width: 300px;
 
-            height: 70px;
+            height: 10vh;
         }
         .p-3{
             height: 100%;
@@ -317,3 +317,24 @@
             line-height: 1.6;
         }
       }
+@media screen and (max-height: 915px){
+    .cont-3{
+        height: 9vh;
+    }
+}
+
+@media screen and (max-height: 896px){
+    .cont-3{
+        height: 9vh;
+    }
+}
+@media screen and (max-height: 667px){
+    .cont-3{
+        height: 12vh;
+    }
+}
+@media screen and (max-height: 370px){
+    .cont-3{
+        height: 18vh;
+    }
+}
