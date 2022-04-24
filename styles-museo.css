@@ -1,0 +1,324 @@
+    #section-museo{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        width: 100%;
+    }
+
+    .c-m{
+        margin-bottom: 3rem;
+    }
+
+    .article-museo{
+        background: white;
+        flex:3 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+    .data{
+        flex: 1 1 auto;
+        width: 65%
+        flex-flow:1;
+        display: flex;
+        flex-flow: column nowrap;
+        align-self: stretch;
+    }
+
+        .data-title{
+            flex: 1 1 auto;
+            margin: .8rem auto;
+            padding: .5rem;
+            width: 70%;
+
+            box-shadow: 0 -2px #ad7b00 inset;
+
+            letter-spacing: 2px;
+            font-size: 35px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .data-subtitle{
+            flex: 1 1 auto;
+            margin: .8rem auto;
+            padding: .2rem;
+            width: 70%;
+
+
+            letter-spacing: 2px;
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .data h3{
+            width: 70%;
+            text-align: left;
+            letter-spacing: 2px;
+            margin-top:4rem;
+            margin-left: 8rem;
+
+            box-shadow: 0 -3px #ad7b00 inset;
+
+            padding-bottom: .8rem;
+        }
+
+        .data-p{
+            flex: 1 1 auto;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.5;
+
+            width: 70%;
+            margin: 1.5rem auto;
+            padding: .7rem 1.8rem;
+
+            margin: 30px auto;
+
+        }
+
+        p.data-p span, .data-p span{
+            font-weight: bold;
+        }
+
+        dl.data-p, img.data-p{
+            margin: .2rem auto;
+        }
+
+        img.data-p{
+            display: block;
+            max-width:100%;
+            border-radius:10%;
+            object-fit: cover;
+        }
+
+        .data-p-enlace{
+
+            text-decoration: none;
+
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.5;
+
+            width: 70%;
+            margin: 1.5rem auto;
+            padding: .7rem 1.8rem;
+
+            margin: 30px auto;
+            border:1px solid #ad7b00;
+
+            transition: box-shadow 1s;
+        }
+        .data-p-enlace:hover{
+            box-shadow: 200px 0 #ad7b00 inset;
+            color:#fff;
+        }
+
+
+    .data-2-img{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+        box-shadow: 0 -3px rgba(0,0,0,0.5) inset;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .column{
+        flex: 25%;
+        padding: 5px;
+    }
+    .column img{
+        width: 100%;
+        margin-top: 5px;
+    }
+
+
+
+    .nav-s{
+        flex:1 1 auto;
+        display: flex;
+
+        margin-bottom: 5rem;
+    }
+    .nav-i{
+        width: 35%;
+        height: 180px;
+    }
+
+@media screen and (max-width: 980px) {
+    #section-museo{
+            padding: 0;
+            margin-top: 0;
+    }
+
+    .nav-s{
+        width: 100%;
+        margin-bottom: 90px;
+    }
+
+    .nav-i{
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .data h2{
+        margin: .5rem auto;
+        width: 80%;
+    }
+    .nav-s{
+        margin-bottom: 80px;
+        }
+    .nav-i{
+        height: 140px;
+    }
+
+    .data-p{
+        width: 80%;
+    }
+
+    .data h3{
+        width: 80%;
+        margin-left: 4rem;
+        margin-top:3.7rem;
+    }
+}
+@media  screen and (max-width: 680px){
+    .column{
+        flex: 50%;
+    }
+    .data h3{
+        width: 80%;
+        margin-left: 3rem;
+        margin-top:3.3rem;
+    }
+
+    .data-p{
+        font-size: 16px;
+    }
+    .nav-i{
+        height: 130px;
+    }
+}
+@media  screen and (max-width: 570px){
+    .data h3{
+        font-size: 18px;
+    }
+}
+
+@media  screen and (max-width: 480px){
+    .column{
+        flex: 100%;
+    }
+    .nav-s-activate{
+        display: none;
+    }
+
+    .data h2{
+        margin: .6rem auto;
+        font-size: 25px;
+        padding:.3rem;
+    }
+    .data-subtitle{
+        font-size: 20px;
+    }
+    .data h3{
+        width: 80%;
+         margin-left: 2rem;
+         letter-spacing: 1.6;
+         font-size: 17px;
+    }
+    .data-p{
+        font-size: 14px;
+        margin: 1.1rem auto;
+        padding: .5rem 1.4rem;
+    }
+    .data-p-enlace{
+        font-size: 16px;
+
+        width: 80%;
+        margin: 1.3rem auto;
+        padding: .6rem 1.8rem;
+
+        margin: 30px auto;
+    }
+
+
+    .cont-3{
+        height: 85px;
+        margin-bottom: 40px;
+    }
+    .p-3{
+        height: 100%;
+    }
+}
+
+@media  screen and (max-width: 370px){
+    #header, #section-museo, #footer{
+            width: 384px;
+    }
+    .cont-3{
+        width: 384px;
+    }
+}
+@media screen and (max-width: 290px) {
+    #header,#footer{
+        width: 107%;
+    }
+    #section-museo{
+        width: 290px;
+    }
+    .cont-3{
+            padding: 0;
+            margin: 0 auto;
+            width: 300px;
+
+            height: 70px;
+            margin-bottom: 30px;
+        }
+        .p-3{
+            height: 100%;
+        }
+        .i{
+            margin: .2rem 0;
+        }
+        .p-3 p{
+            font-size: 12px;
+        }
+        .data-title{
+            font-size: 20px;
+        }
+        .data-subtitle{
+            font-size: 15px;
+        }
+
+        .data h3{
+            font-size: 13px;
+        }
+
+        .article-museo{
+            width: 300px;
+        }
+
+        .data-p{
+            margin-bottom: .9rem;
+
+            font-size: 13px;
+            margin: .9rem auto;
+            padding: .3rem .9rem;
+            line-height: 1.6;
+        }
+    .data-p-enlace{
+        font-size: 15px;
+
+        width: 80%;
+        margin: 1.2rem auto;
+
+        margin: 30px auto;
+    }
+
+
+}

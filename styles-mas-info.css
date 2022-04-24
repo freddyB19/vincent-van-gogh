@@ -1,0 +1,168 @@
+figure.data-p img{
+    display: block;
+    max-width:100%;
+    object-fit: cover;
+
+    margin:0 auto;
+
+}
+.data h2{
+    margin: .8rem auto;
+    padding: .5rem;
+    width: 70%;
+}
+.data-p-enlace-2{
+
+    text-decoration: none;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+
+    width: 70%;
+    margin: 1.5rem auto;
+    padding: .3rem 1.8rem;
+
+    margin: 30px auto;
+    border:1px solid #ad7b00;
+
+
+    transition: box-shadow 1s;
+}
+.data-p-enlace-2:hover{
+    box-shadow: 160px 0 #ad7b00 inset;
+    color:#fff;
+}
+
+.data-p-enlace-2 span{
+    font-weight: normal;
+}
+
+iframe{
+    width: 560px;
+    height: 315px;
+}
+figcaption{
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 980px) {
+    #section-museo{
+            padding: 0;
+            margin-top: 0;
+    }
+
+    .nav-s{
+        width: 100%;
+        margin-bottom: 90px;
+    }
+
+    .nav-i{
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .data-p{
+        width: 80%;
+    }
+    .data h2{
+        margin: .5rem auto;
+        width: 80%;
+    }
+    .nav-s{
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    iframe{
+        width: 85%;
+        height: 280px;
+    }
+    .data-p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    iframe{
+        width: 90%;
+        height: 180px;
+    }
+    .data-p-enlace-2{
+        font-size: 16px;
+
+        width: 80%;
+        margin: 1.3rem auto;
+        padding: .2rem 1.6rem;
+
+        margin: 30px auto;
+    }
+    a.data-p-enlace-2 span{
+        display: none;
+    }
+    .data h2{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .data-p{
+        font-size: 14px;
+        margin: 1.1rem auto;
+        padding: .5rem 1.4rem;
+    }
+
+}
+@media screen and (max-width: 360px){
+    #header, #footer{
+        width: 385px;
+    }
+    .data-p-enlace-2{
+        font-size: 12px;
+
+        width: 80%;
+        margin: 1.2rem auto;
+
+
+        margin: 30px auto;
+    }
+
+    .data h2{
+        font-size: 20px;
+    }
+
+
+}
+@media screen and (max-width: 290px) {
+    #header,#footer{
+        width: 107%;
+    }
+    #section-museo{
+        width: 290px;
+    }
+    .nav-s{
+        width: 110px;
+    }
+    .data-p-enlace-2{
+        font-size: 12px;
+
+        width: 80%;
+        margin: 1.2rem auto;
+
+        padding: .1rem 1.5rem;
+
+        margin: 30px auto;
+    }
+    .data-p{
+        margin-bottom: .9rem;
+
+        font-size: 13px;
+        margin: .9rem auto;
+        padding: .3rem .9rem;
+        line-height: 1.6;
+    }
+    .data h3{
+        margin-left: 1.5rem;
+    }
+
+}
+

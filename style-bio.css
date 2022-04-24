@@ -1,0 +1,319 @@
+
+#section-bio{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article-bio{
+        background: white;
+        flex:1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+
+        justify-content: space-between;
+    }
+        .data h2{
+            margin: .8rem auto;
+            padding: .5rem;
+            width: 70%;
+
+            box-shadow: 0 -2px #ad7b00 inset;
+
+            letter-spacing: 2px;
+            font-size: 35px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .article-bio p, .data p{
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.5;
+
+            width: 70%;
+            margin: 1.5rem auto;
+            padding: .7rem 1.8rem;
+
+            margin: 30px auto;
+        }
+
+        .data h3{
+            width: 70%;
+            text-align: left;
+            letter-spacing: 2px;
+            margin-top:4rem;
+            margin-left: 8rem;
+
+            box-shadow: 0 -3px #ad7b00 inset;
+
+            padding-bottom: .8rem;
+        }
+
+        .data p span{
+            font-weight: bold;
+        }
+
+
+        .data p a{
+            color:#ad7b00;
+            text-decoration: none;
+            box-shadow: 0 -2px #ad7b00 inset;
+        }
+
+        .data p:last-child{
+            box-shadow: 0 -2px #ad7b00 inset;
+        }
+        .data p:nth-of-type(2):first-letter{
+            float: left;
+            font-family: Verdana;
+            font-weight: 400;
+            font-size: 110px;
+            color: #3e3e3e;
+            text-transform: lowercase;
+            line-height: .28;
+            padding: 20px 6px 10px 0;
+            margin-left: -5px;
+            font-style: normal;
+        }
+
+    .p-3{
+        height: 70px;
+    }
+
+    .cont-3{
+        flex: 1 1 auto;
+    }
+
+    .nav-s{
+        flex:1 1 auto;
+        display: flex;
+        width: 100%;
+
+        margin-bottom: 5rem;
+    }
+
+    .nav-i{
+        width: 35%;
+        height: 180px;
+    }
+
+
+    .cont-bio{
+        width: 80%;
+        outline:1px solid black;
+        margin:1.8rem auto;
+
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .bio-p{
+            flex:1 1 auto;
+            flex-grow: 1;
+
+            width:300px;
+            height: 120px;
+        }
+
+        .bio-p:nth-child(1){
+            background: url("0006_vincent_van_gogh_01.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .bio-p:nth-child(2){
+            background: url("van-gogh-autoportrait-chapeau-paille.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .bio-p:nth-child(3){
+            background: url("efe_vincent.jpg_231334169.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+
+
+
+
+    @media  screen and (max-width: 980px) {
+        #section-bio{
+            flex-flow: column-reverse nowrap;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        .cont-3{
+            width: 100%;
+        }
+
+        .bio-p{
+            height: 100px;
+        }
+
+        .nav-s{
+            width: 100%;
+            margin-bottom: 90px;
+        }
+
+        .nav-i{
+            height: 160px;
+        }
+
+
+    }
+
+    @media  screen and (max-width: 880px){
+        .article-bio h2, .data h2{
+
+            margin: .5rem auto;
+            width: 80%;
+        }
+
+        .article-bio p, .data p{
+            width: 80%;
+        }
+
+        .data h3{
+            width: 80%;
+             margin-left: 4rem;
+             margin-top:3.7rem;
+        }
+
+        .bio-p{
+            width: 25%;
+        }
+        .nav-s{
+            margin-bottom: 80px;
+        }
+        .nav-i{
+            height: 140px;
+        }
+    }
+
+    @media  screen and (max-width: 680px){
+        .cont-bio{
+            width: 85%;
+            outline:1px solid black;
+            margin:1.8rem auto;
+
+            display: flex;
+            flex-flow: row wrap;
+
+            border-radius: 5px;
+        }
+        .data h3{
+            width: 80%;
+             margin-left: 3rem;
+             margin-top:3.3rem;
+        }
+
+        .data p{
+            font-size: 16px;
+        }
+
+        .nav-i{
+            height: 130px;
+        }
+
+        .data p:nth-of-type(2):first-letter{
+            font-size: 100px;
+            padding: 10px 6px 13px 0;
+
+        }
+    }
+    @media  screen and (max-width: 570px){
+        .data h3{
+            font-size: 18px;
+        }
+    }
+    @media  screen and (max-width: 480px){
+        .cont-bio{
+            width: 80%;
+        }
+
+
+        .article-bio h2{
+            margin-top: 30px;
+            font-size: 25px;
+            padding:.3rem;
+
+        }
+        .data h3{
+            width: 80%;
+             margin-left: 2rem;
+             letter-spacing: 1.6;
+             font-size: 17px;
+        }
+        .bio-p{
+            height: 70px;
+        }
+        .article-bio p{
+            font-size: 14px;
+            margin: 1.1rem auto;
+            padding: .5rem 1.4rem;
+        }
+        .cont-3{
+            height: 85px;
+        }
+        .p-3{
+            height: 100%;
+        }
+
+        .nav-s-activate{
+            display: none;
+        }
+
+        .data p:nth-of-type(2):first-letter{
+            font-size: 90px;
+            padding: 10px 6px 13px 0;
+
+        }
+
+     }
+
+@media  screen and (max-width: 370px){
+    #header, #section-bio, #footer{
+        width: 384px;
+    }
+        .cont-3{
+            width: 384px;
+        }
+}
+
+    @media  screen and (max-width: 295px){
+        #header,#footer{
+            width: 107%;
+        }
+        #section-bio{
+            width: 290px;
+        }
+        .cont-3{
+            padding: 0;
+            margin: 0 auto;
+            width: 300px;
+
+            height: 70px;
+        }
+        .p-3{
+            height: 100%;
+        }
+        .i{
+            margin: .2rem 0;
+        }
+        .p-3 p{
+            font-size: 12px;
+        }
+
+        .data h3{
+            font-size: 13px;
+        }
+
+        .article-bio p{
+            font-size: 13px;
+            margin: .9rem auto;
+            padding: .3rem .9rem;
+            line-height: 1.6;
+        }
+      }

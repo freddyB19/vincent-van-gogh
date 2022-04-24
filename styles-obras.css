@@ -1,0 +1,285 @@
+    #section-obra{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        width: 100%;
+    }
+    .article-obra{
+        flex:3 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+        .data h2{
+            margin: .8rem auto;
+            padding: .5rem;
+            width: 70%;
+
+            box-shadow: 0 -2px #ad7b00 inset;
+
+            letter-spacing: 2px;
+            font-size: 35px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .data p span{
+            font-weight: bold;
+        }
+
+        .data-parrafo{
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.5;
+
+            width: 70%;
+            margin: 1.5rem auto;
+            padding: .7rem 1.8rem;
+
+            margin: 30px auto;
+        }
+
+
+    .nav-s{
+        flex:1 1 auto;
+        display: flex;
+
+        margin-bottom: 5rem;
+    }
+    .nav-i{
+        width: 35%;
+        height: 180px;
+    }
+
+    .cont-obra{
+        width: 90%;
+        margin: 1.8rem auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .obra-p{
+        flex:1 1 auto;
+        flex-grow: 1;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        padding: 5px;
+    }
+
+    .target{
+        width: 30%;
+        height: 260px;
+
+        border-radius: 5px;
+
+        outline: 1px solid black;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        margin: 5px;
+
+        transition: box-shadow 0.3s ease;
+        box-sizing: border-box;
+    }
+    .target:hover{
+        box-shadow: 6px 7px 3px rgba(0,0,0,0.5);
+    }
+        .t-img{
+            flex:10 1 auto;
+            height: 50%;
+            box-sizing: border-box;
+        }
+
+        .t-img img{
+            max-width: 100%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .t-p{
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            height: 30%;
+
+        }
+        .t-p h4{
+            text-align: center;
+        }
+        .t-p p{
+            margin: .2rem auto;
+            text-align: center;
+        }
+        .t-p p span{
+            font-weight: bold;
+        }
+
+
+@media screen and (max-width: 980px) {
+    #section-obra{
+            padding: 0;
+            margin-top: 0;
+    }
+
+    .nav-s{
+        width: 100%;
+        margin-bottom: 90px;
+    }
+
+    .nav-i{
+        height: 160px;
+    }
+
+}
+
+@media  screen and (max-width: 880px){
+
+    .obra-p{
+        justify-content: center;
+        align-items: center;
+    }
+    .target{
+        width: 40%;
+        height: 350px;
+    }
+    .t-p{
+        height: 25%;
+    }
+
+
+    .data h2{
+        width: 80%;
+        margin: .5rem auto;
+    }
+    .data p{
+        width: 80%;
+        margin:0 auto;
+    }
+
+    .nav-s{
+            margin-bottom: 80px;
+        }
+        .nav-i{
+            height: 140px;
+        }
+}
+
+@media  screen and (max-width: 680px){
+
+    .target{
+        width: 40%;
+        height: 300px;
+    }
+
+    .data p{
+            font-size: 16px;
+        }
+
+        .nav-i{
+            height: 130px;
+        }
+    .t-p h4{
+        font-size: 15px;
+    }
+    .t-p p{
+        font-size: 12px;
+    }
+
+}
+
+@media  screen and (max-width: 480px){
+    .nav-s-activate{
+        display: none;
+    }
+
+    .cont-3{
+        height: 85px;
+    }
+    .p-3{
+        height: 100%;
+    }
+    .cont-obra{
+        width: 70%;
+    }
+    .target{
+        width: 100%;
+    }
+
+    .data h2{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .data-parrafo{
+        font-size: 14px;
+    }
+
+    .t-p h4{
+        font-size: 16px;
+    }
+    .t-p p{
+        font-size: 14px;
+    }
+}
+
+@media  screen and (max-width: 370px){
+    #header, #section-obra, #footer{
+        width: 385px;
+    }
+    .cont-3{
+        width: 384px;
+    }
+
+    .data h2{
+        font-size: 20px;
+    }
+}
+
+@media  screen and (max-width: 290px){
+    #header,#footer{
+        width: 107%;
+    }
+    #section-obra{
+        width: 290px;
+    }
+    .cont-obra{
+        width: 90%;
+    }
+    .target{
+        height: 250px;
+    }
+
+    .cont-3{
+            padding: 0;
+            margin: 0 auto;
+            width: 300px;
+
+            height: 70px;
+        }
+        .p-3{
+            height: 100%;
+        }
+        .i{
+            margin: .2rem 0;
+        }
+        .p-3 p{
+            font-size: 12px;
+        }
+    .data-parrafo{
+        font-size: 13px;
+    }
+
+    .t-p p{
+        font-size: 13px;
+    }
+
+}
+
+

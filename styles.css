@@ -1,0 +1,806 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#header{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 300px;
+}
+    .header-image-activate{
+        display: block;
+    }
+    .header-image{
+        flex:4 1 auto;
+        height: auto;
+        background: url("Self-Portrait _ The Art Institute of Chicago.jpg");
+        background-position: center;
+        background-size:cover;
+        margin:0;
+        padding:0;
+    }
+    .header-info{
+        flex:1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        margin:0;
+        padding:.5rem;
+        background: linear-gradient(45deg, #1F1D36, #3F3351, #864879);
+    }
+        .header-menu{
+            flex: 1 1 auto;
+            margin: 0;
+            padding: 0;
+            height: 2rem;
+        }
+            .header-menu-list{
+                box-shadow: 0px -3px  rgba(255, 255, 255, .5) inset;
+                text-align: right;
+                padding: 5px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .header-menu-list a{
+                text-decoration: none;
+                color:#fff;
+                margin: .60rem 1rem;
+            }
+        .header-title{
+            flex: 5 1 auto;
+            display: flex;
+            align-items: center;
+
+            width: 100%;
+
+            position: relative;
+        }
+        .header-title blockquote{
+            flex: 3 1 auto;
+            text-align: center;
+            color:#fff;
+
+        }
+        .header-title blockquote p{
+            flex:1 1 auto;
+            align-self: center;
+        }
+        .cite{
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            font-style: italic;
+            color:#fff;
+
+            text-align: right;
+
+
+        }
+        .cite-autor{
+            font-style: normal;
+            font-weight: 200;
+            letter-spacing: 2px;
+            color: rgba(255,255,255, 0.8);
+        }
+
+
+#section{
+    flex:5 1 auto;
+    background: white;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 850px;
+    margin: .9rem 0;
+    padding: .5rem;
+
+
+}
+
+
+    .article{
+        flex:1 1 auto;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        margin:0 auto;
+    }
+    .article h1{
+        flex: 1 1 auto;
+        margin-bottom: .5rem;
+        text-align: center;
+        font-size: 35px;
+    }
+    .article h2{
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .article-intro{
+        font-size: 18px;
+    }
+
+    .article-intro, .article h1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .article p{
+        flex: 1 1 auto;
+
+        text-align: justify;
+        width: 90%;
+        margin: .7rem auto;
+        padding: .7rem 1.8rem;
+        line-height: 1.5;
+
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        border-radius: 5px;
+
+    }
+
+    .nav-s-activate{
+        display: block;
+    }
+    .nav-s-phone{
+        display: none;
+    }
+
+    .nav-s{
+        flex:5 1 auto;
+        display: flex;
+        align-items: center;
+    }
+        .nav-i{
+            flex:1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 145px;
+            height: 550px;
+
+            text-decoration: none;
+            color: white;
+
+            position: relative;
+
+            transition: all .8s;
+        }
+        .nav-i:hover{
+            transform: scale(1.2);
+            font-size: 20px;
+            z-index: 1;
+        }
+        .nav-i:nth-child(1){
+            background: url("van gogh's life - 00.png");
+            background-position: center;
+            background-size: cover;
+        }
+        .nav-i:nth-child(1)::before{
+            content:"";
+
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            background: url("van gogh's life - 00.png");
+
+            opacity: .5;
+        }
+        .nav-i:nth-child(2){
+            background: url("A história fascinante por trás da obra _Noite….jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .nav-i:nth-child(2)::before{
+            content:"";
+
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            background: url("Un ilustrador recrea la vida de Van Gogh con un cómic lleno de color - Cultura Inquieta.jpg");
+
+            opacity: .5;
+        }
+        .nav-i:nth-child(3){
+            background: url("van_gogh_cuadro_2_15_millones_euros-ktCI--1200x630@abc.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .nav-i:nth-child(3)::before{
+            content:"";
+
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            background: url("van_gogh_cuadro_2_15_millones_euros-ktCI--1200x630@abc.jpg");
+
+            opacity: .5;
+        }
+        .nav-t{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            position: relative;
+        }
+    .nav-section{
+        display: flex;
+        flex:5 1 65%;
+    }
+    .nav-img{
+        display:flex;
+        position:relative;
+        flex-direction: column;
+        flex:1 1 35%;
+        padding:0;
+        margin:0;
+        width:130px
+    }
+    .nav-img:hover{
+        transform: scale(1.2);
+    }
+    .nav-img p{
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+    }
+    .nav-img a{
+        display:flex;
+        flex: 1 1 100%;
+        padding:0;
+        margin:0;
+        height: 100px;
+    }
+    .nav-img a img{
+        width:auto;
+        height:auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding:0;
+        margin:0;
+    }
+
+
+#footer{
+    display: flex;
+    width: 100%;
+    height: 8rem;
+}
+    .fondo-activate{
+        display: block;
+    }
+    .footer-info{
+        background: linear-gradient(#180A0A, #46244C);
+        flex: 2 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 200;
+
+        padding:10px 0;
+
+        color:#fff;
+
+        letter-spacing: 2px;
+
+
+    }
+        .fondo{
+            flex: 1 1 auto;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(#180A0A, #46244C);
+        }
+                .start {
+                    background-color: white;
+                    display: inline-block;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    position: absolute;
+                    animation-iteration-count: infinite;
+                }
+
+                .start-1{
+                    left:15%;
+                    top: 10%;
+                    animation-name: st;
+                    animation-duration: 2.1s, 2s;
+                }
+
+                .start-2{
+                    top: 6%;
+                    right: 30%;
+                    animation-name: st;
+                    animation-duration: 3s, 0.9s;
+                }
+                .start-3{
+                    top: 54%;
+                    left: 70%;
+                    animation-name: st;
+                    animation-duration: 4s, 0.9s;
+                }
+                .start-4{
+                    bottom: 14%;
+                    right: 20%;
+                    animation-name: st;
+                    animation-duration: 2.5s, .7s;
+                }
+                .start-5{
+                    top: 44%;
+                    right: 35%;
+                    animation-name: st;
+                    animation-duration: 2.8s, 2s;
+                }
+                .start-6{
+                    top: 34%;
+                    left: 35%;
+                    animation-name: st;
+                    animation-duration: 5s, 2.3s;
+                }
+                .start-7{
+                    bottom: 34%;
+                    left: 15%;
+                    animation-name: st;
+                    animation-duration: 3s, 1s;
+                }
+                .start-8{
+                    bottom: 4%;
+                    left: 10%;
+                    animation-name: st;
+                    animation-duration: 4s, 2.1s;
+                }
+                .start-9{
+                    bottom: 24%;
+                    left: 50%;
+                    animation-name: st;
+                    animation-duration: 3.5s, 2s;
+                }
+                @keyframes st {
+                    20%{
+                        opacity: 0.5;
+                        transform: scale(0.5);
+                    }
+
+                }
+
+
+@media screen and (max-width: 980px) {
+    #section, #section-bio{
+        flex-flow: column-reverse nowrap;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .article{
+        margin: .7rem auto;
+        padding: .6rem 2rem;
+    }
+
+
+    .article p{
+        margin: .5rem auto;
+        font-size: 17px;
+        margin-bottom: .8rem;
+        padding: .5rem .3rem;
+
+    }
+
+    .nav-s{
+        flex:1 1 auto;
+        height:100px;
+        align-items:initial;
+    }
+    .nav-i{
+        height: 160px;
+    }
+
+    #footer{
+        height: 7rem;
+    }
+
+    .footer-info{
+        padding: 8px 0;
+    }
+}
+
+@media screen and (max-width: 860px){
+    #header{
+        height: 200px;
+    }
+    .header-image-activate{
+        display: none;
+    }
+
+    .header-info{
+        align-items: center;
+        background: url("Vincent Van Gogh Sunflowers.jpg");
+    }
+    .header-menu{
+        height: 1.5rem;
+    }
+    .header-menu-list{
+        box-shadow: 0 5px rgba(0,0,0, .5);
+    }
+    .header-menu-list a{
+        color:#fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: .50rem 1rem;
+    }
+
+    .cite{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+    .cite-autor{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: right;
+    }
+
+
+
+    .article{
+        margin: .1rem auto;
+        padding: .4rem 1.5rem;
+    }
+    .article p{
+        font-size: 1em;
+        margin-bottom: .7rem;
+    }
+    .nav-i{
+        height: 140px;
+    }
+
+
+    #footer{
+        margin-top: 2rem;
+        height: 6rem;
+    }
+
+    .start{
+        height: 4px;
+        width: 4px;
+    }
+
+    .footer-info{
+        padding: 6px 0;
+    }
+}
+
+@media  screen and (max-width: 680px){
+    .nav-i{
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .article{
+        padding: .3rem 1.5rem;
+    }
+    .article h2{
+
+        font-size: 18px;
+        margin-bottom: .2rem;
+    }
+
+    .article p{
+        margin:.5rem;
+    }
+
+    .nav-s{
+            height: 80px;
+    }
+    .nav-i{
+        padding: 1rem 0;
+    }
+
+    #footer{
+
+        height: 5rem;
+    }
+
+    .start{
+        height: 3px;
+        width: 3px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #header{
+        height: 160px;
+    }
+    .header-info{
+        background: url("A história fascinante por trás da obra _Noite….jpg");
+    }
+
+    .header-menu-list{
+        box-shadow: 0 2px rgba(255,255,255, .5);
+        padding: 3px;
+    }
+    .header-menu-list a{
+        color:#fff;
+        font-size: 13px;
+        margin: .40rem 1rem;
+    }
+
+    .cite{
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .cite-autor{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .article{
+        margin:.7rem auto;
+        padding: 0 .8rem;
+        flex: 4 1 auto;
+    }
+    .article h1{
+        margin-top:.3rem;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    .article p{
+        font-size: .9em;
+        line-height: 1.4;
+        margin-bottom: .6rem;
+
+        margin: 0 auto;
+        padding: .2rem;
+    }
+    .article-intro{
+        font-size: 14px;
+    }
+
+    /* Vista del menu */
+    .nav-s-activate{
+        display: none;
+    }
+    .nav-s-phone{
+        display: block;
+    }
+    .cont-3{
+        flex: 1 1 auto;
+        width: 100%;
+        padding: .2rem;
+
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 2px rgba(0,0,0,0.2);
+
+        height: 10px; /* 30 */
+    }
+    .cont-3 a{
+        text-decoration: none;
+        color:black;
+
+        transition: box-shadow .3s;
+
+    }
+    .cont-3 a:active{
+        box-shadow: 300px 0 rgba(0,0,0,0.1) inset,
+                    -300px 0 rgba(0,0,0,0.1) inset;
+    }
+
+    .p-3{
+        flex:1 1 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 80px; /*100%*/
+    }
+
+    .p-3 p{
+        font-size: 14px;
+    }
+
+    .i{
+        flex:1 1 auto;
+
+        width: 80px;
+    }
+
+    .p-3:nth-child(1) .i{
+        background: url("Figura-4-Autorretrato-con-oreja-vendada.jpg");
+        background-size: cover;
+        background-position: center;
+
+        clip-path: circle();
+    }
+    .p-3:nth-child(2) .i{
+        background: url("png-the-starry-night.png");
+        background-size: cover;
+        background-position: center;
+
+        clip-path: circle();
+    }
+    .p-3:nth-child(3) .i{
+        background: url("museo-vg.png");
+        background-size: cover;
+        background-position: center;
+
+        clip-path: circle();
+    }
+
+    a p{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        margin:.2rem 0;
+    }
+
+    #footer{
+        height: 3rem;
+    }
+
+    .footer-info{
+        padding:8px 0;
+
+        font-weight: 200;
+        font-size: 12px;
+    }
+
+    .fondo-activate{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width: 375px){
+    .cont-3{
+        height: 30px;
+    }
+}
+@media screen and (max-width: 370px){
+    .cite{
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.3;
+    }
+    .cite-autor{
+        font-size: 15px;
+        text-align: center;
+    }
+    #section, #footer, #header{
+        width: 384px;
+    }
+    .cont-3{
+        width: 384px;
+    }
+
+}
+@media screen and (max-width: 295px) {
+    #header,#footer{
+        width: 107%;
+    }
+    #section{
+        width: 290px;
+    }
+
+    .header-info{
+        padding: .3rem;
+        width: 290px;
+    }
+    .header-menu-list a{
+        text-decoration: none;
+        color:#fff;
+        margin: .30rem .5rem;
+    }
+
+    .cite{
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .cite-autor{
+        font-size: 14px;
+    }
+
+    .article h1{
+        font-size: 20px;
+    }
+    .article p{
+        width: 100%;
+    }
+    .article-intro{
+        font-size: 13px;
+    }
+
+    .cont-3{
+        padding: 0;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .cont-3{
+            padding: 0;
+            margin: 0 auto;
+            width: 300px;
+
+            height: 15px;
+        }
+        .p-3{
+            height: 100%;
+        }
+
+    .p-3 p{
+        font-size: 12px;
+    }
+    .i{
+        margin: .1rem 0;
+    }
+    .footer-info{
+        font-size: 8px;
+    }
+
+
+}
+
+@media screen and (max-width: 285px){
+    .article-intro{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-height: 1368px) {
+    #footer{
+        margin-top: 260px;
+    }
+    .article{
+        margin: 20px auto;
+    }
+
+}
+
+@media screen and (max-height: 930px){
+    #footer{
+        margin-top: 110px;
+    }
+}
