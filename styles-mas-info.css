@@ -110,12 +110,18 @@ figcaption{
         margin: 1.1rem auto;
         padding: .5rem 1.4rem;
     }
+    .cont-3{
+        height: 10vh;
+    }
+
+}
+@media  screen and (max-width: 370px){
+    .cont-3, #section, #header, #footer{
+        width: 100vw;
+    }
 
 }
 @media screen and (max-width: 360px){
-    #header, #footer{
-        width: 385px;
-    }
     .data-p-enlace-2{
         font-size: 12px;
 
@@ -133,14 +139,14 @@ figcaption{
 
 }
 @media screen and (max-width: 290px) {
-    #header,#footer{
-        width: 107%;
+    .cont-3{
+        padding: 0;
+        margin: 0 auto;
+
+        height: 10vh;
     }
-    #section-museo{
-        width: 290px;
-    }
-    .nav-s{
-        width: 110px;
+    .p-3{
+        height: 100%;
     }
     .data-p-enlace-2{
         font-size: 12px;
@@ -166,3 +172,24 @@ figcaption{
 
 }
 
+@media screen and (max-height: 915px){
+    .cont-3{
+        height: 9vh;
+    }
+}
+
+@media screen and (max-height: 896px){
+    .cont-3{
+        height: 9vh;
+    }
+}
+@media screen and (max-height: 667px){
+    .cont-3{
+        height: 12vh;
+    }
+}
+@media screen and (max-height: 370px){
+    .cont-3{
+        height: 18vh;
+    }
+}
