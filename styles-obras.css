@@ -200,7 +200,9 @@
     }
 
     .cont-3{
-        height: 85px;
+        height: 10vh;
+
+         box-shadow: 0 -2px rgba(0,0,0, 0.5) inset;
     }
     .p-3{
         height: 100%;
@@ -230,11 +232,9 @@
 }
 
 @media  screen and (max-width: 370px){
-    #header, #section-obra, #footer{
-        width: 385px;
-    }
-    .cont-3{
-        width: 384px;
+    .cont-3, #section, #header, #footer{
+        /* width: 384px; */
+        width: 100vw;
     }
 
     .data h2{
@@ -243,12 +243,6 @@
 }
 
 @media  screen and (max-width: 290px){
-    #header,#footer{
-        width: 107%;
-    }
-    #section-obra{
-        width: 290px;
-    }
     .cont-obra{
         width: 90%;
     }
@@ -259,9 +253,8 @@
     .cont-3{
             padding: 0;
             margin: 0 auto;
-            width: 300px;
 
-            height: 70px;
+            height: 10vh;
         }
         .p-3{
             height: 100%;
@@ -279,7 +272,32 @@
     .t-p p{
         font-size: 13px;
     }
+    
 
 }
+
+@media screen and (max-height: 915px){
+    .cont-3{
+        height: 9vh;
+    }
+}
+
+@media screen and (max-height: 896px){
+    .cont-3{
+        height: 9vh;
+    }
+}
+@media screen and (max-height: 667px){
+    .cont-3{
+        height: 12vh;
+    }
+}
+@media screen and (max-height: 370px){
+    .cont-3{
+        height: 18vh;
+    }
+}
+
+
 
 
