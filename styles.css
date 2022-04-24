@@ -612,7 +612,7 @@ body{
         justify-content: space-between;
         box-shadow: 0 2px rgba(0,0,0,0.2);
 
-        height: 10px; /* 30 */
+        height: 2vh;
     }
     .cont-3 a{
         text-decoration: none;
@@ -634,7 +634,6 @@ body{
         justify-content: center;
         align-items: center;
 
-        height: 80px; /*100%*/
     }
 
     .p-3 p{
@@ -696,10 +695,16 @@ body{
 }
 @media screen and (max-width: 375px){
     .cont-3{
-        height: 30px;
+        height: 5vh;
     }
 }
 @media screen and (max-width: 370px){
+    .cont-3, #section, #header, #footer{
+        width: 100vw;
+    }
+    .cont-3{
+        height: 4vh;
+    }
     .cite{
         font-size: 15px;
         font-weight: 300;
@@ -709,22 +714,19 @@ body{
         font-size: 15px;
         text-align: center;
     }
-    #section, #footer, #header{
-        width: 384px;
-    }
-    .cont-3{
-        width: 384px;
-    }
+
 
 }
-@media screen and (max-width: 295px) {
-    #header,#footer{
-        width: 107%;
-    }
-    #section{
-        width: 290px;
-    }
+@media screen and (max-width: 290px) {
+        .cont-3{
+            padding: 0;
+            margin: 0 auto;
 
+            height: 5vh;
+        }
+        .p-3{
+            height: 100%;
+        }
     .header-info{
         padding: .3rem;
         width: 290px;
@@ -799,8 +801,8 @@ body{
 
 }
 
-@media screen and (max-height: 930px){
-    #footer{
-        margin-top: 110px;
+@media screen and (max-height: 370px){
+    .cont-3{
+        height: 11vh;
     }
 }
