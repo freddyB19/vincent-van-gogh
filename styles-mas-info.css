@@ -72,6 +72,9 @@ figcaption{
     .nav-s{
         margin-bottom: 80px;
     }
+    .nav-i{
+            height: 140px;
+        }
 }
 
 @media screen and (max-width: 680px){
